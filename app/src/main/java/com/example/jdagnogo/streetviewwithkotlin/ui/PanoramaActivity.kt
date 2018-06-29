@@ -1,7 +1,8 @@
-package com.example.jdagnogo.streetviewwithkotlin
+package com.example.jdagnogo.streetviewwithkotlin.ui
 
 import android.os.Bundle
 import android.support.v4.app.FragmentActivity
+import com.example.jdagnogo.streetviewwithkotlin.R
 import com.google.android.gms.maps.OnStreetViewPanoramaReadyCallback
 import com.google.android.gms.maps.StreetViewPanorama
 import com.google.android.gms.maps.StreetViewPanoramaFragment
