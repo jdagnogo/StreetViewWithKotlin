@@ -3,19 +3,19 @@ package com.example.jdagnogo.streetviewwithkotlin.db.dao
 import android.arch.persistence.room.Dao
 import android.arch.persistence.room.Insert
 import android.arch.persistence.room.Query
-import com.example.jdagnogo.streetviewwithkotlin.db.entities.AddressEntity
+import com.example.jdagnogo.streetviewwithkotlin.db.entities.PlaceEntity
 
 @Dao
-public interface AddressDao {
+interface PlaceDao {
     /**
      * Load all data
      */
-    @Query("SELECT * FROM address")
-    fun getAll(): List<AddressEntity>
+    @Query("SELECT * FROM place")
+    fun getAll(): List<PlaceEntity>
 
     /**
      * insert all data
      */
     @Insert
-    fun insertAll(vararg adress: AddressEntity)
+    fun insertAll(vararg places: PlaceEntity)
 }
