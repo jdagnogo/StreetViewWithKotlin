@@ -1,10 +1,16 @@
 package com.example.jdagnogo.streetviewwithkotlin.ui
 
-import android.support.v7.app.AppCompatActivity
+import android.app.Activity
 import android.os.Bundle
 import com.example.jdagnogo.streetviewwithkotlin.R
+import dagger.android.AndroidInjector
+import dagger.android.DispatchingAndroidInjector
+import dagger.android.HasActivityInjector
+import javax.inject.Inject
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : Activity() {
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

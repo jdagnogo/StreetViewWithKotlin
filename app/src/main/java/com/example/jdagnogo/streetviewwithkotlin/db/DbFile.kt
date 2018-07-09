@@ -7,7 +7,10 @@ import com.example.jdagnogo.streetviewwithkotlin.db.dao.PlaceDao
 import com.example.jdagnogo.streetviewwithkotlin.db.entities.AddressEntity
 import com.example.jdagnogo.streetviewwithkotlin.db.entities.PlaceEntity
 
-@Database(entities = arrayOf(PlaceEntity::class, AddressEntity::class), version = 1)
+@Database(entities = arrayOf(
+        PlaceEntity::class,
+        AddressEntity::class), version = 1)
+
 abstract class DbFile : RoomDatabase() {
      abstract fun getPlaceDao() : PlaceDao
 
